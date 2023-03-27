@@ -1,0 +1,8 @@
+{
+  "slug": "topological-job-planner",
+  "title": "Topological job planner",
+  "description": "Calculate dependency-safe earliest schedules and a critical path for a job DAG.",
+  "category": "systems",
+  "demo_args": [],
+  "expected_exit": 0
+}
