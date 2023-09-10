@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 1 of 13. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 2 of 13. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -13,7 +13,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | Stage | Synthetic date | Change |
 | --- | --- | --- |
 | 1 | 2023-03-27T10:04:25+05:30 | add repository metadata and Python ignore rules (present) |
-| 2 | 2023-09-10T18:14:49+05:30 | add module imports, constants, and scope documentation (later stage) |
+| 2 | 2023-09-10T18:14:49+05:30 | add module imports, constants, and scope documentation (present) |
 | 3 | 2024-05-02T17:21:46+05:30 | validate dependency DAGs and calculate earliest critical-path schedules (later stage) |
 | 4 | 2024-11-11T13:03:30+05:30 | add the deterministic demonstration and command-line entry point (later stage) |
 | 5 | 2024-12-07T17:17:40+05:30 | test parallel jobs do not sum (later stage) |
