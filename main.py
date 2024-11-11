@@ -50,3 +50,9 @@ def plan(jobs):
         raise ValueError('Dependency cycle detected')
     final = min(schedule, key=lambda key: (-schedule[key]['finish'], key)) if schedule else None
     return {'schedule': schedule, 'total_duration': schedule[final]['finish'] if final else 0, 'critical_path': paths[final] if final else []}
+
+def demo():
+    return plan([{'id': 'ingest', 'duration': 2}, {'id': 'index', 'duration': 5, 'depends_on': ['ingest']}, {'id': 'validate', 'duration': 3, 'depends_on': ['ingest']}, {'id': 'publish', 'duration': 1, 'depends_on': ['index', 'validate']}])
+if __name__ == '__main__':
+    argparse.ArgumentParser(description=__doc__).parse_args()
+    print(json.dumps(demo(), indent=2))
