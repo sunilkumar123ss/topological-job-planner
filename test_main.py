@@ -13,6 +13,11 @@ class PlannerTests(unittest.TestCase):
         r = m.plan([{'id': 'a', 'duration': 3}, {'id': 'b', 'duration': 5}])
         self.assertEqual(r['total_duration'], 5)
 
+    def test_diamond_uses_longest_predecessor(self):
+        r = m.demo()
+        self.assertEqual(r['total_duration'], 8)
+        self.assertEqual(r['critical_path'], ['ingest', 'index', 'publish'])
+        self.assertEqual(r['schedule']['publish']['start'], 7)
 
 
 
