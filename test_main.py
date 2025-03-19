@@ -19,6 +19,9 @@ class PlannerTests(unittest.TestCase):
         self.assertEqual(r['critical_path'], ['ingest', 'index', 'publish'])
         self.assertEqual(r['schedule']['publish']['start'], 7)
 
+    def test_cycle_rejected(self):
+        with self.assertRaises(ValueError):
+            m.plan([{'id': 'a', 'duration': 1, 'depends_on': ['b']}, {'id': 'b', 'duration': 1, 'depends_on': ['a']}])
 
 
 

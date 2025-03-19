@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 6 of 13. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 7 of 13. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -18,7 +18,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 4 | 2024-11-11T13:03:30+05:30 | add the deterministic demonstration and command-line entry point (present) |
 | 5 | 2024-12-07T17:17:40+05:30 | test parallel jobs do not sum (present) |
 | 6 | 2024-12-22T10:48:10+05:30 | test diamond uses longest predecessor (present) |
-| 7 | 2025-03-19T11:02:07+05:30 | test cycle rejected (later stage) |
+| 7 | 2025-03-19T11:02:07+05:30 | test cycle rejected (present) |
 | 8 | 2025-03-21T10:09:45+05:30 | test unknown and duplicate rejected (later stage) |
 | 9 | 2025-08-26T11:15:18+05:30 | test empty and zero duration (later stage) |
 | 10 | 2025-08-29T10:26:52+05:30 | test input order is irrelevant (later stage) |
