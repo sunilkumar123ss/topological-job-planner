@@ -23,6 +23,11 @@ class PlannerTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             m.plan([{'id': 'a', 'duration': 1, 'depends_on': ['b']}, {'id': 'b', 'duration': 1, 'depends_on': ['a']}])
 
+    def test_unknown_and_duplicate_rejected(self):
+        with self.assertRaises(ValueError):
+            m.plan([{'id': 'a', 'duration': 1, 'depends_on': ['x']}])
+        with self.assertRaises(ValueError):
+            m.plan([{'id': 'a', 'duration': 1}, {'id': 'a', 'duration': 2}])
 
 
 if __name__ == '__main__':
