@@ -29,6 +29,10 @@ class PlannerTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             m.plan([{'id': 'a', 'duration': 1}, {'id': 'a', 'duration': 2}])
 
+    def test_empty_and_zero_duration(self):
+        self.assertEqual(m.plan([])['total_duration'], 0)
+        r = m.plan([{'id': 'a', 'duration': 0}, {'id': 'b', 'duration': 0, 'depends_on': ['a']}])
+        self.assertEqual(r['schedule']['b']['start'], 0)
 
 if __name__ == '__main__':
     unittest.main()
