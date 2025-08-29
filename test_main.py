@@ -34,5 +34,8 @@ class PlannerTests(unittest.TestCase):
         r = m.plan([{'id': 'a', 'duration': 0}, {'id': 'b', 'duration': 0, 'depends_on': ['a']}])
         self.assertEqual(r['schedule']['b']['start'], 0)
 
+    def test_input_order_is_irrelevant(self):
+        jobs = [{'id': 'a', 'duration': 1}, {'id': 'b', 'duration': 2, 'depends_on': ['a']}]
+        self.assertEqual(m.plan(jobs), m.plan(jobs[::-1]))
 if __name__ == '__main__':
     unittest.main()

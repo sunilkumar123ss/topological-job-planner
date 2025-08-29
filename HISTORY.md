@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 9 of 13. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 10 of 13. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -21,7 +21,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 7 | 2025-03-19T11:02:07+05:30 | test cycle rejected (present) |
 | 8 | 2025-03-21T10:09:45+05:30 | test unknown and duplicate rejected (present) |
 | 9 | 2025-08-26T11:15:18+05:30 | test empty and zero duration (present) |
-| 10 | 2025-08-29T10:26:52+05:30 | test input order is irrelevant (later stage) |
+| 10 | 2025-08-29T10:26:52+05:30 | test input order is irrelevant (present) |
 | 11 | 2025-11-07T19:42:12+05:30 | add isolated tests, demo, and help verification (later stage) |
 | 12 | 2026-04-06T18:36:33+05:30 | add the hosted Python verification workflow (later stage) |
 | 13 | 2026-04-22T15:56:58+05:30 | Document usage, limitations and the disclosed reconstructed timeline (later stage) |
